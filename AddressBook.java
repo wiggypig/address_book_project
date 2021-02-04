@@ -11,13 +11,25 @@ public class AddressBook {
 
     // methods: ways to manipulate the array list
 
+
+    public static List<Entry> getEntryList() {
+        return entryList;
+    }
+/*
+    public static void setEntryList(List<Entry> entryList) {
+        AddressBook.entryList = entryList;
+    }*/
+
     // add method
-    public static void addEntry( Entry entry) {
+    public static void addEntry(Entry entry) {
         entryList.add(entry);
-        System.out.println(entry);
+        System.out.println("Added " + entry);
     }
 
     // delete
+    public static void removeEntry(String email){
+        // entryList.remove();
+    }
     // finding
     // printing
 
